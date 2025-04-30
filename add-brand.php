@@ -164,6 +164,50 @@
         font-family: 'Poppins', sans-serif;
         box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.05);
     }
+
+    /* Mejoras en sidebar - igual que dashboard */
+    .left-sidebar {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1) !important;
+        border-right: none !important;
+        background: #fff !important;
+    }
+
+    .sidebar-nav>ul>li>a {
+        border-radius: 8px !important;
+        margin: 5px 15px !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .sidebar-nav>ul>li>a:hover {
+        background: rgba(92, 74, 199, 0.1) !important;
+        color: #5c4ac7 !important;
+    }
+
+    /* Estilos para corregir el menú dashboard */
+    .sidebar-nav>ul>li.active>a {
+        background: #5c4ac7 !important;
+        /* Solo color morado */
+        background-image: none !important;
+        /* Elimina gradiente si existe */
+        color: white !important;
+        box-shadow: 0 5px 15px rgba(92, 74, 199, 0.4) !important;
+    }
+
+    /* Cambiar color de iconos a blanco */
+    .sidebar-nav>ul>li>a i,
+    .sidebar-nav>ul>li.active>a i {
+        color: white !important;
+    }
+
+    /* Estilo al pasar el mouse */
+    .sidebar-nav>ul>li>a:hover i {
+        color: #5c4ac7 !important;
+    }
+
+    /* Color del texto del menú activo */
+    .sidebar-nav>ul>li.active>a .hide-menu {
+        color: white !important;
+    }
 </style>
 
 <div class="page-wrapper">
