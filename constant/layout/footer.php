@@ -73,37 +73,6 @@ include('./constant/connect.php');
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<style>
-    .goog-logo-link {
-        display: none !important;
-    }
-
-    .goog-te-gadget {
-        color: transparent;
-    }
-
-    .goog-te-gadget .goog-te-combo {
-        margin: 0px 0;
-        padding: 8px;
-    }
-
-    #google_translate_element {
-        padding-top: 14px;
-    }
-</style>
-<footer class="bg-primary text-white text-center text-lg-start fixed-bottom">
-    <!-- Grid container -->
-
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        Para más desarrollos accede a
-        <a class="text-white" href="https://www.configuroweb.com/">ConfiguroWeb</a>
-    </div>
-    <!-- Copyright -->
-</footer>
-<!--/ Copy this code to have a working example -->
 
 </div>
 </div>
