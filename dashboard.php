@@ -361,26 +361,28 @@ $countLowStock2 = $lowStockQuery2->num_rows;
     }
 
     /* Estilos para corregir el menú dashboard */
-    .sidebar-nav > ul > li.active > a {
-        background: #5c4ac7 !important; /* Solo color morado */
-        background-image: none !important; /* Elimina gradiente si existe */
+    .sidebar-nav>ul>li.active>a {
+        background: #5c4ac7 !important;
+        /* Solo color morado */
+        background-image: none !important;
+        /* Elimina gradiente si existe */
         color: white !important;
         box-shadow: 0 5px 15px rgba(92, 74, 199, 0.4) !important;
     }
 
     /* Cambiar color de iconos a blanco */
-    .sidebar-nav > ul > li > a i, 
-    .sidebar-nav > ul > li.active > a i {
+    .sidebar-nav>ul>li>a i,
+    .sidebar-nav>ul>li.active>a i {
         color: white !important;
     }
 
     /* Estilo al pasar el mouse */
-    .sidebar-nav > ul > li > a:hover i {
+    .sidebar-nav>ul>li>a:hover i {
         color: #5c4ac7 !important;
     }
 
     /* Color del texto del menú activo */
-    .sidebar-nav > ul > li.active > a .hide-menu {
+    .sidebar-nav>ul>li.active>a .hide-menu {
         color: white !important;
     }
 
@@ -625,6 +627,32 @@ $countLowStock2 = $lowStockQuery2->num_rows;
 
     ::-webkit-scrollbar-thumb:hover {
         background: #102b49;
+    }
+
+    /* Mejora en el header - cambio a degradado en tonos grises */
+    .header {
+        background: linear-gradient(135deg, #4e4e4e, #7e7e7e) !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    /* Ajuste del navbar-header para mantener consistencia */
+    .navbar-header {
+        background: transparent !important;
+    }
+
+    /* Color de los elementos del header */
+    .navbar-top-links>li>a {
+        color: #f8f9fd !important;
+    }
+
+    .navbar-top-links>li>a:hover,
+    .navbar-top-links>li>a:focus {
+        background: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    /* Color del texto del perfil y otros elementos en el header */
+    .profile-pic span {
+        color: #ffffff !important;
     }
 </style>
 </div>

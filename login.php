@@ -243,7 +243,7 @@ include('./constant/connect.php');
     }
   }
 
-  .popup__content__title {
+  .popup_content_title {
     font-weight: 700;
     color: #102b49;
   }
@@ -410,7 +410,7 @@ if ($_POST) {
         <div class="popup popup--icon -success js_success-popup popup--visible">
           <div class="popup__background"></div>
           <div class="popup__content">
-            <h3 class="popup__content__title">
+            <h3 class="popup_content_title">
               Login Exitoso
             </h3>
             <p>Acceso Exitoso</p>
@@ -431,7 +431,7 @@ if ($_POST) {
         <div class="popup popup--icon -error js_error-popup popup--visible">
           <div class="popup__background"></div>
           <div class="popup__content">
-            <h3 class="popup__content__title">
+            <h3 class="popup_content_title">
               Error
             </h3>
             <p>Correo o Contraseña Incorrectos</p>
@@ -446,7 +446,7 @@ if ($_POST) {
       <div class="popup popup--icon -error js_error-popup popup--visible">
         <div class="popup__background"></div>
         <div class="popup__content">
-          <h3 class="popup__content__title">
+          <h3 class="popup_content_title">
             Error
           </h3>
           <p>Correo no existe</p>
@@ -561,34 +561,34 @@ if ($_POST) {
   });
 </script>
 <script>
-// Este script se ejecutará después de que todos los demás scripts hayan cargado
-window.addEventListener('load', function() {
-  // Esperar un poco para asegurarnos de que todo se ha cargado y renderizado
-  setTimeout(function() {
-    // Buscar y ocultar cualquier elemento que pueda contener el copyright
-    var elements = document.querySelectorAll('footer, .footer, .copyright, .site-info, [class*="footer"], [class*="copy"]');
-    elements.forEach(function(el) {
-      el.style.display = 'none';
-    });
-    
-    // Crear nuestro propio footer
-    var newFooter = document.createElement('div');
-    newFooter.innerHTML = 'Copyright © 2025 Project Developed by Diego Centeno';
-    newFooter.style.position = 'fixed';
-    newFooter.style.bottom = '0';
-    newFooter.style.left = '0';
-    newFooter.style.width = '100%';
-    newFooter.style.background = '#f5f5f5';
-    newFooter.style.color = '#5c4ac7';
-    newFooter.style.textAlign = 'center';
-    newFooter.style.padding = '10px 0';
-    newFooter.style.zIndex = '999999';
-    newFooter.style.fontSize = '14px';
-    newFooter.style.borderTop = '1px solid #eee';
-    
-    document.body.appendChild(newFooter);
-  }, 500);
-});
+  // Este script se ejecutará después de que todos los demás scripts hayan cargado
+  window.addEventListener('load', function() {
+    // Esperar un poco para asegurarnos de que todo se ha cargado y renderizado
+    setTimeout(function() {
+      // Buscar y ocultar cualquier elemento que pueda contener el copyright
+      var elements = document.querySelectorAll('footer, .footer, .copyright, .site-info, [class*="footer"], [class*="copy"]');
+      elements.forEach(function(el) {
+        el.style.display = 'none';
+      });
+
+      // Crear nuestro propio footer
+      var newFooter = document.createElement('div');
+      newFooter.innerHTML = 'Copyright © 2025 Project Developed by Diego Centeno';
+      newFooter.style.position = 'fixed';
+      newFooter.style.bottom = '0';
+      newFooter.style.left = '0';
+      newFooter.style.width = '100%';
+      newFooter.style.background = '#f5f5f5';
+      newFooter.style.color = '#5c4ac7';
+      newFooter.style.textAlign = 'center';
+      newFooter.style.padding = '10px 0';
+      newFooter.style.zIndex = '999999';
+      newFooter.style.fontSize = '14px';
+      newFooter.style.borderTop = '1px solid #eee';
+
+      document.body.appendChild(newFooter);
+    }, 500);
+  });
 </script>
 </body>
 
